@@ -57,8 +57,8 @@
             in the namespace {{ target_namespace }} on the clusters:
             {{ target_clusters | join(', ') }}
             For policy details, visit: {{ policy_url }}"
-          priority: {{ priority }}
-          severity: {{ severity }}
+          priority: "{{ priority }}"
+          severity: "{{ severity }}"
       environment:
         PYTHONPATH: "{{ python_path_override | default(lookup('env', 'PYTHONPATH')) }}"
       register: new_incident
