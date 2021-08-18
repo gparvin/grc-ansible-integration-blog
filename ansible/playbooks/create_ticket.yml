@@ -55,8 +55,8 @@
           description:
             "{{ policy_namespace }}/{{ policy_name }} violation: {{ description }}
             in the namespace {{ target_namespace }} on the clusters:
-            {{ target_clusters | join(', ') }}"
-            For policy details, visit: {{ policy_url }}
+            {{ target_clusters | join(', ') }}
+            For policy details, visit: {{ policy_url }}"
           priority: {{ priority }}
           severity: {{ severity }}
       environment:
